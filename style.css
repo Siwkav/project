@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f12;
+  color: #fff;
+}
+header {
+  background: #ff0000;
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #1a1a1f;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.card .name {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  background: #15151a;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.modal-content {
+  background: #1b1b20;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 90%;
+  padding: 20px;
+  position: relative;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.modal-body {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.modal-body img {
+  width: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.info {
+  flex: 1;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.info b {
+  color: #ff4d4d;
+}
+a.discord {
+  color: #7289da;
+  text-decoration: none;
+  font-weight: bold;
+}
